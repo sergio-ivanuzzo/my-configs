@@ -15,6 +15,8 @@ Plugin 'bling/vim-airline'
 Plugin 'ervandew/supertab'
 " validation
 Plugin 'scrooloose/syntastic'
+" debug
+Bundle 'joonty/vdebug'
 " autocomplete
 Plugin 'alvan/vim-closetag'
 Plugin 'jiangmiao/auto-pairs'
@@ -22,6 +24,10 @@ Plugin 'jiangmiao/auto-pairs'
 " Front-end
 Plugin 'evidens/vim-twig'
 Plugin 'lilydjwg/colorizer'
+" Gulp
+Plugin 'KabbAmine/gulp-vim'
+" comments
+Plugin 'scrooloose/nerdcommenter'
 
 call vundle#end()
 filetype plugin indent on
@@ -72,6 +78,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 " Supertab
 let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabClosePreviewOnPopupClose = 1
 " Validation
 " Syntastic
 set statusline+=%#warningmsg#
